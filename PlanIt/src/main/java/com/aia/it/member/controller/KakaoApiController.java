@@ -36,7 +36,7 @@ public class KakaoApiController {
 		return kakaoUrl;
 	}
 
-	// 참고한 사이트
+	// 참고힌 사이트
 	// https://alpreah.tistory.com/122,
 	// 승연 git:
 	// https://github.com/NikkieS/w1f1/blob/kim/w1f1_login_kim/src/main/java/w1f1/ksy/login/controller/KakaoController.java

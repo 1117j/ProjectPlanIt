@@ -176,6 +176,7 @@ li.sortableBox{
     position: absolute;
     left: 50%;
     margin-left: -48px;
+    width: 105px;
 }
 
 td>label{
@@ -484,7 +485,7 @@ margin: auto;
       <div class="modal-header">
       <input type="image" src="/it/resources/images/icon_ok.png" data-dismiss="modal" class="modalIconSubmit" onclick="regDaily(); ">
         <input type="image" src="/it/resources/images/icon_back.png" data-dismiss="modal" class="modalIconClose">
-              <input type="text" class="ddateModal" readonly>
+              <input type="text" class="ddateModal" readonly >
         
       </div>
       <div class="modal-body">

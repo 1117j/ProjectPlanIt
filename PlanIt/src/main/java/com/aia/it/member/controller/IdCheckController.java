@@ -32,6 +32,7 @@ public class IdCheckController {
 } 
 
 
+
 //package com.aia.it.member.controller;
 //
 //import org.springframework.beans.factory.annotation.Autowired;

@@ -203,6 +203,8 @@ a {
 <body>
 
 	<%@ include file="/WEB-INF/views/include/header.jsp"%>
+	
+
 
 	<%-- ${plannerListView}; --%>
 
@@ -219,8 +221,8 @@ a {
 		<br>
 
 
-		<c:url value="${initParam['memberUploadPath']}" var="imagePath" />
-		<c:url value="${initParam['boardUploadPath']}" var="bimagePath" />
+		
+		
 
 
 
@@ -237,7 +239,7 @@ a {
 				
 				<div class = "main-empty-box" id = "main-empty-box">
 					
-					<a href="<c:url value="/board/boardWrite"/>"><span class="fa fa-plus-circle"></span></a>
+					<a href="<c:url value="/planner/calendar"/>"><span class="fa fa-plus-circle"></span></a>
 					<p style ="margin-top: 10px;"> 플랜잇을 통해 당신의 <br> 여행 첫 플랜을 만들어서공유해 보세요! </p>
 				
 				
@@ -246,6 +248,9 @@ a {
 	
 			
 			</c:if>
+			
+			
+			
 			
 			<!--플래너가 있을때  -->
 			<c:if test="${not empty plannerListView.plannerList }">
@@ -259,8 +264,11 @@ a {
 
 					 <tr class ="userIndex-p">
 						<td class = "indexNum-p"></td>
+						<c:url value="${initParam['memberUploadPath']}" var="imagePath" />
+						
 						<td><img id="table-board-profile" src="${imagePath}/${loginInfo.photo}" width="30px"
-							height="30px"></td>
+							height="30px">							
+							</td>
 						<!--글쓴이 이름으로 대체할 부분!  -->
 						<td><label for="editPlanner" class="listButton">
 							<a id = "main-ptitle-a">${planner.ptitle}</a></label>
@@ -351,6 +359,7 @@ a {
 							<td class ="indexNum-b" style  = "text-align: center;"></td>							
 							<td>
 							<div style = "text-align: center;">
+							<c:url value="${initParam['memberUploadPath']}" var="imagePath" />
 							<img id = "table-board-profile" src="${imagePath}/${board.uphoto}" width="30px"
 								height="30px">
 							<br>

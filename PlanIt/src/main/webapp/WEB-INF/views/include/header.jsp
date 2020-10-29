@@ -130,7 +130,7 @@ a:visited {
           <ul class="dropdown-menu">
             <li><a href="<c:url value="/board/boardList"/>">커뮤니티 게시글 보기</a></li>
             <li><a href="<c:url value="/board/boardWrite"/>">커뮤니티 게시글 작성</a></li>
-            <li><a href="<c:url value="/board/boardWrite"/>">내가 쓴 게시글 보기</a></li>
+            <li><a href="<c:url value="/board/boardMyList/${loginInfo.uidx}"/>">내가 쓴 게시글 보기</a></li>
         </ul>
         </li>
           

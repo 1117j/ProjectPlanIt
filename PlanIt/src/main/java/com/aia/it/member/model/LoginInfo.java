@@ -27,7 +27,8 @@ public class LoginInfo {
 		this.photo = photo;
 	}
 	
-	public LoginInfo(String uid, String uname, String uphonenum, String photo, char ukakao) {
+	public LoginInfo(int uidx, String uid, String uname, String uphonenum, String photo, char ukakao) {
+		this.uidx= uidx;
 		this.uid = uid;
 		this.uname = uname;
 		this.uphonenum = uphonenum; 

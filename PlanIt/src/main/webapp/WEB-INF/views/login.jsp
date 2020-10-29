@@ -126,6 +126,9 @@
     
     
     </head>
+    
+    
+
 
  <body cellpadding="0" cellspacing="0" marginleft="0" margintop="0" width="100%" height="100%" align="center">
  
@@ -174,8 +177,7 @@
                 
                 <button id="btn-Yes" class="btn btn-lg btn-primary btn-block" type="submit" style ="height : 41.7px; margin-bottom : 5px;">로그인</button>
                
-               
-               <!--카카오 회원가입  --> 
+                
                 <a id="custom-login-btn" href="${kakao_url}"> 
                 <img src="https://developers.kakao.com/tool/resource/static/img/button/login/full/ko/kakao_login_medium_wide.png"
 								width="278"/></a><hr>

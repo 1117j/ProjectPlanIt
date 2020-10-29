@@ -78,7 +78,7 @@ input[type=text], input[type=password], input[type=email] {
 						value="${member.uname}" required>
 				</div>
 			</div>
-
+		<c:if test="${member.ukakao }==N">
 			<div class="form-group">
 				<label class="control-label col-sm-4" for="pwd">비밀번호 </label>
 				<div class="col-sm-8">
@@ -86,6 +86,24 @@ input[type=text], input[type=password], input[type=email] {
 						placeholder="새로운 비밀번호를 입력하세요." name="upw" required>
 				</div>
 			</div>
+		</c:if>
+		<c:if test="${member.ukakao}==Y ">
+			<div class="form-group">
+				<label class="control-label col-sm-4" for="pwd">비밀번호 </label>
+				<div class="col-sm-8">
+					<input type="password" class="form-control" id="upw"
+						placeholder="비밀번호를 입력하세요." name="upw" required>
+				</div>
+			</div>
+		</c:if>
+
+
+
+
+
+
+
+
 
 			<div class="form-group">
 				<label class="control-label col-sm-4" for="phonenumber">휴대폰

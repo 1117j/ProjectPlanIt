@@ -266,12 +266,12 @@ a:hover {
 												<input type="text" class="edit-input" id="uname" name="uname"
 														value="${myInfo.uname}" required>
 											</div>
-								
+											
 											<div class="edit-input-group">
 												<span class = "glyphicon glyphicon-lock" id ="input-icons"></span>
 												<input type="password" maxlength ="12" class="edit-input" id="upw"
 														placeholder="새로운 비밀번호를 입력하세요." name="upw" minlength="6" required>
-											</div>
+											</div> 
 											<div class="edit-input-group">
 												<span class = "glyphicon glyphicon-lock" id ="input-icons"></span>
 												<input type="password" maxlength ="12" class="edit-input" id="chkUpw"
@@ -280,6 +280,7 @@ a:hover {
 								       			<span  id="checkmsg03"></span>
 								       			</div>
 											</div>
+								
 								
 											<div class="edit-input-group">
 												<span class = "glyphicon glyphicon-phone" id ="input-icons"></span>

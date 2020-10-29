@@ -283,7 +283,7 @@ a {
 
 
 						<!-- c if 사진 있다면  -->
-						<c:if test="${not empty viewBoard.bphoto1 || viewBoard.bphoto2}">
+						
 						<!-- 사진 슬라이드를 들어가게 할 예정 -->
 						<div id="myCarousel" class="carousel slide" data-ride="carousel">
 							<!-- Indicators 압축-->
@@ -297,14 +297,20 @@ a {
 								<div class="item active">
 									<img src="${bimagePath}/${viewBoard.bphoto1}"
 										style="width: 100%;">
+										<c:if test="${empty viewBoard.bphoto1}">
+										 <span class = "fa fa-image" style="color:#1ABC9C"><br>no image</span>
+										 </c:if>
 								</div>
 
 								<div class="item">
 									<img src="${bimagePath}/${viewBoard.bphoto2}"
 										style="width: 100%;">
+										<c:if test="${empty viewBoard.bphoto2}">
+										 <span class = "fa fa-image" style="color:#1ABC9C"><br>no image</span>
+										 </c:if>
 								</div>
 							</div>
-
+<c:if test="${not empty viewBoard.bphoto2}">
 							<!-- Left and right controls (슬라이드 아이콘)-->
 							<a class="left carousel-control" href="#myCarousel"
 								data-slide="prev"> <span
@@ -315,8 +321,9 @@ a {
 								class="glyphicon glyphicon-chevron-right"></span> <span
 								class="sr-only">Next</span>
 							</a>
+								</c:if>
 						</div>
-						</c:if>
+					
 
 	
 						<br>

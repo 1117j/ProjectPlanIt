@@ -25,17 +25,13 @@ public class KakaoLoginService {
 		dao = sessionTemplate.getMapper(MemberDaoInterface.class);
 		
 		int result = 0; 
-		
 		Member member = null;
-
 		member = dao.selectMemberById(loginRequest.getUid());
-		
 		System.out.println("카카오 로그인 서비스 1111 ->>>" + dao.selectMemberById(loginRequest.getUid()));
 		System.out.println("카카오 로그인 서비스 멤버 정보 : " + member);
 
-
 		if (member != null) {
-			LoginInfo loginInfo = new LoginInfo(member.getUid(), member.getUname(),  member.getUphonenum(),  member.getUphoto(), member.getUkakao());
+			LoginInfo loginInfo = new LoginInfo(member.getUidx(), member.getUid(), member.getUname(),  member.getUphonenum(),  member.getUphoto(), member.getUkakao());
 
 			session.setAttribute("loginInfo", loginInfo);
 			

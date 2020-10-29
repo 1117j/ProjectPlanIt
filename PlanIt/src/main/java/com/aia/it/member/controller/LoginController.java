@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.aia.it.member.model.LoginRequest;
 import com.aia.it.member.service.LoginService;
@@ -22,9 +23,21 @@ public class LoginController {
 	@Autowired
 	LoginService loginService;
 	
+	/*
+	 * @RequestMapping(method = RequestMethod.GET) public String loginForm() {
+	 * 
+	 * 
+	 * return "login"; }
+	 */
+	
 	@RequestMapping(method = RequestMethod.GET)
-	public String loginForm() {
-		return "login";
+	public ModelAndView KakaoLoginForm(HttpSession session) {
+		ModelAndView mav = new ModelAndView(); 
+
+		String kakaoUrl = KakaoApiController.getAuthorizationUrl(session);
+		mav.addObject("kakao_url", kakaoUrl);
+		System.out.println("KakaoLoginController.kakaoLoginForm " + kakaoUrl);
+		return mav;
 	}
 	
 	@RequestMapping(produces = "text/html; charset=utf-8", method = RequestMethod.POST)

@@ -32,8 +32,13 @@ public interface BoardDaoInterface {
 	int boardDelete(Board board);
 	
 	int selectByPidx(int pidx);
-
+	
 	int insertBoardNull(Board board);
+	
+	//  마이페이지에서 보여줄 전체 갯수
+	int totalCnt1(int uidx);
+  	//시작 끝
+	List<BoardJoinMember> selectList(int startRow, int bOARD_CNT_PER_PAGE);
 
 
 }

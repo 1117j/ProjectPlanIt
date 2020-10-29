@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.aia.it.board.service.BoardListService;
+import com.aia.it.planner.service.PlannerListService;
 import com.aia.it.planner.service.PlannerListService2;
 
 
