@@ -14,7 +14,7 @@ Spring Project - 여행 일정 등록 및 커뮤니티 공유 서비스
 
 - 웹 표준 
 
-  `HTML5` `CSS3` `JavaScript` `jQuery` `Bootstrap4` `W3C`
+  `HTML5` `CSS3` `JavaScript` `jQuery` `Bootstrap` `W3C`
 
 - DBMS  - `MySQL`
 
@@ -63,22 +63,26 @@ Spring Project - 여행 일정 등록 및 커뮤니티 공유 서비스
 
 * DB - 전체 ERD
 
-
-
+![PlanIt_ERD](https://user-images.githubusercontent.com/63032376/97860795-1f00e280-1d46-11eb-80f9-5d45ccedcc53.png)
 
 
 * 회원가입 및 로그인 프로세스 
 
-
-
-
-
+![member_process](https://user-images.githubusercontent.com/63032376/97861126-a2bacf00-1d46-11eb-8395-6bf8f69ae0e9.png)
 
 <br>
 <br>
 
 
 ### 구현 - 소스코드
+* 회원관리 코드
+    - [Controller](https://github.com/1117j/ProjectPlanIt/tree/main/PlanIt/src/main/java/com/aia/it/member/controller)
+    
+    - [Service](https://github.com/1117j/ProjectPlanIt/tree/main/PlanIt/src/main/java/com/aia/it/member/service)
+    
+    - [Dao](https://github.com/1117j/ProjectPlanIt/tree/main/PlanIt/src/main/java/com/aia/it/member/service)
+    
+    - [View](https://github.com/1117j/ProjectPlanIt/tree/main/PlanIt/src/main/webapp/WEB-INF/views/member)
 
 <hr />
 
