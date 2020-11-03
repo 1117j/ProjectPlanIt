@@ -18,7 +18,7 @@ Spring Project - 여행 일정 등록 및 커뮤니티 공유 서비스
 
 - DBMS  - `MySQL`
 
-- Spring Framework, Mybatis
+- `Spring Framework`, `Mybatis`
 
 - API 
 
